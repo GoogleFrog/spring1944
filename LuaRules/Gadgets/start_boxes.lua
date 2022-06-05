@@ -16,6 +16,10 @@ local startboxConfig
 
 local ParseBoxes = VFS.Include ("LuaRules/Gadgets/Include/startbox_utilities.lua")
 
+VFS.Include("LuaRules/Utilities/glVolumes.lua", nil, VFS.ZIP)
+VFS.Include("LuaRules/Utilities/numberfunctions.lua", nil, VFS.ZIP)
+VFS.Include("LuaRules/Utilities/teamFunctions.lua", nil, VFS.ZIP)
+
 local function GetAverageStartpoint(boxID)
 	local box = startboxConfig[boxID]
 	local startpoints = box.startpoints

@@ -1,3 +1,4 @@
+
 function tobool(val)
   local t = type(val)
   if (t == 'nil') then
